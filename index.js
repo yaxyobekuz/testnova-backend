@@ -1,6 +1,7 @@
+require("./src/start/routes");
 const mongoose = require("mongoose");
-const { mongodbUrl } = require("./config");
-const server = require("./src/start/server");
+const { server } = require("./src/start/server");
+const { mongodbUrl, port } = require("./config");
 
 (async () => {
   // Connect DataBase
